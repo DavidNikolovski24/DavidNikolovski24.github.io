@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-size: 16px;
+  word-spacing: 3px;
+  line-height: 1.15;
+  font-weight: 300;
+}
+
+@media (max-width: 850px) {
+  * {
+    font-size: 11px;
+  }
+}
+/* custom borders */
+.custom-border {
+  position: relative;
+}
+.custom-border::before,
+.custom-border::after {
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  content: "";
+}
+.custom-border::before {
+  left: 0;
+  top: 0;
+  border-left: 15px solid;
+  border-top: 15px solid;
+  border-radius: 10px 0px 280px 0px;
+  clip-path: polygon(0 0, 100% 0, 50% 51%, 0% 100%);
+  border-image: linear-gradient(128deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  transition: all 500ms ease;
+}
+.custom-border::after {
+  right: 0;
+  bottom: 0;
+  border-right: 15px solid;
+  border-bottom: 15px solid;
+  border-radius: 10px 0px 10px 0px;
+  clip-path: polygon(100% 100%, 100% 0, 50% 52%, 0% 100%);
+  border-image: linear-gradient(320deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  transition: all 500ms ease;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+.custom-borderProject {
+  position: relative;
+}
+.custom-borderProject::before {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  content: "";
+  left: 0;
+  top: 0;
+  border-left: 3px solid;
+  border-top: 3px solid;
+  border-image: linear-gradient(128deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  border-radius: 10px 0px 280px 0px;
+  clip-path: polygon(0 0, 100% 0, 50% 51%, 0% 100%);
+  transition: all 500ms ease;
+}
+/* /custom border  */
+/* slide in animation project sections */
+.slide-in {
+  animation: slideInFromRight 0.5s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+
+    display: block;
+  }
+}
+/* /slide in animation project sections */
+/* filter for logo */
+.dark-filter {
+  filter: brightness(0) saturate(100%) invert(2%) sepia(4%) saturate(3185%)
+    hue-rotate(336deg) brightness(92%) contrast(85%);
+}
+
+/* /filter for logo */
+/* button */
+.buttonStyled {
+  position: relative;
+  padding: 10px 20px;
+}
+.buttonStyled::before,
+.buttonStyled::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 30%;
+  transition: all 500ms ease;
+}
+
+.buttonStyled::before {
+  left: 0;
+  top: 0;
+  border-left: 0.8px solid transparent;
+  border-top: 0.8px solid transparent;
+  border-image: linear-gradient(128deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  border-radius: 10px 0px 280px 0px;
+  clip-path: polygon(0 0, 100% 0, 50% 51%, 0% 100%);
+}
+.buttonStyled::after {
+  right: 0;
+  bottom: 0;
+  border-right: 0.8px solid transparent;
+  border-bottom: 0.8px solid transparent;
+  border-image: linear-gradient(128deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  border-radius: 10px 0px 0px 0px;
+  clip-path: polygon(100% 100%, 100% 0, 50% 52%, 0% 100%);
+}
+.buttonStyled:hover::before,
+.buttonStyled:hover::after {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease;
+}
+
+/* /button */
+/* Tabs */
+.font-stretch {
+  letter-spacing: 0;
+  transition: letter-spacing 500ms ease;
+}
+
+.font-stretch:hover {
+  letter-spacing: 1px;
+  transition: letter-spacing 500ms ease;
+}
+
+:root {
+  --grad-1: #663597;
+  --grad-2: #2292a4;
+}
+.border-color-180 {
+  border-image: linear-gradient(180deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  transition: all 500ms ease;
+}
+.border-color-90 {
+  border-image: linear-gradient(90deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  transition: all 500ms ease;
+}
+/* /Tabs */
