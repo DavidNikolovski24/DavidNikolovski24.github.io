@@ -9,7 +9,7 @@ const PrimaryButton = ({ text, link }: Props) => {
   return (
     <Link
       href={link}
-      className="inline-block buttonStyled border-color"
+      className="inline-block buttonStyled border-color text-center"
       target="_blank"
     >
       <p>{text}</p>

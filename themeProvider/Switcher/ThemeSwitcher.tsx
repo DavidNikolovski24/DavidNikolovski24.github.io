@@ -9,7 +9,7 @@ function ThemeToggle() {
 
   return (
     <Expand
-      style={{ transform: "scale(1.7)", marginRight: "3rem" }}
+      style={{ transform: "scale(1.7)", marginRight: "2rem" }}
       duration={500}
       placeholder={"Toggle Theme"}
       toggled={theme === "light" ? false : true}

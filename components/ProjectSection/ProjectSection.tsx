@@ -15,11 +15,9 @@ const ProjectSection = ({
       <div className="border-l border-color-180 pl-5 flex flex-col gap-8">
         <p>{desc}</p>
         <div className="flex gap-10">
-          {websiteLink && <PrimaryButton link={websiteLink} text="View Site" />}
-          {sourceLink && <PrimaryButton link={sourceLink} text={"View Code"} />}
-          {pictures.length !== 0 && (
-            <PrimaryButton text="Open Gallery" link="/" />
-          )}
+          {websiteLink && <PrimaryButton link={websiteLink} text="Website" />}
+          {sourceLink && <PrimaryButton link={sourceLink} text={"Code"} />}
+          {pictures.length !== 0 && <PrimaryButton text="Gallery" link="/" />}
         </div>
       </div>
     </div>
