@@ -20,7 +20,7 @@ const Header = () => {
         />
       </a>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-6">
         <ThemeToggle />
         <Link
           href={"https://mk.linkedin.com/in/david-nikolovski-328394238"}

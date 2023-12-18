@@ -26,18 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="theme">
       <body className={monserat.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-
-          // themes={[
-          //   "redgrad",
-          //   "cyangrad",
-          //   "bluegrad",
-          //   "greengrad",
-          //   "purplegrad",
-          // ]}
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
       </body>

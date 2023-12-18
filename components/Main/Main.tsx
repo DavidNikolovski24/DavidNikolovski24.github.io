@@ -17,7 +17,7 @@ const Main = () => {
   };
 
   return (
-    <main className="flex flex-col lg:flex-row ml-12 gap-24 box-border max-w-full flex-grow min-h-full">
+    <main className="flex flex-col lg:flex-row ml-12 gap-24 box-border max-w-full flex-grow">
       <div className="w-full lg:w-2/3  min-h-full flex-grow overflow-hidden  ">
         <div className={activeTab === "Welcome" ? "slide-in " : "hidden"}>
           <TypingTextAnimation heading="Welcome." />
