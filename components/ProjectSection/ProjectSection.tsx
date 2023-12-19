@@ -1,6 +1,7 @@
 import { IProjectData } from "@/db";
 import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import MaxWidthDialog from "../Modal/Modal";
 
 const ProjectSection = ({
   name,
@@ -17,7 +18,13 @@ const ProjectSection = ({
         <div className="flex gap-10">
           {websiteLink && <PrimaryButton link={websiteLink} text="Website" />}
           {sourceLink && <PrimaryButton link={sourceLink} text={"Code"} />}
-          {pictures.length !== 0 && <PrimaryButton text="Gallery" link="/" />}
+          {pictures.length !== 0 && (
+            <MaxWidthDialog
+              buttonText="Gallery"
+              titleProject={name}
+              projectPictures={pictures}
+            />
+          )}
         </div>
       </div>
     </div>

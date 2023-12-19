@@ -10,7 +10,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="flex w-full justify-between mb-5 flex-grow-0">
-      <a href="/">
+      <a href="/" className="inline-block">
         <Image
           src={"/Logo/SmallLogo.png"}
           width={50}

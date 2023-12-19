@@ -32,7 +32,7 @@
   border-top: 15px solid;
   border-radius: 10px 0px 280px 0px;
   clip-path: polygon(0 0, 100% 0, 50% 51%, 0% 100%);
-  border-image: linear-gradient(128deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  border-image: linear-gradient(128deg, var(--grad-1) 5%, var(--grad-2) 50%) 1;
   transition: all 500ms ease;
 }
 .custom-border::after {
@@ -42,7 +42,7 @@
   border-bottom: 15px solid;
   border-radius: 10px 0px 10px 0px;
   clip-path: polygon(100% 100%, 100% 0, 50% 52%, 0% 100%);
-  border-image: linear-gradient(320deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  border-image: linear-gradient(320deg, var(--grad-1) 10%, var(--grad-2) 40%) 1;
   transition: all 500ms ease;
 }
 h1,
@@ -125,7 +125,7 @@ h4 {
   bottom: 0;
   border-right: 0.8px solid transparent;
   border-bottom: 0.8px solid transparent;
-  border-image: linear-gradient(128deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
+  border-image: linear-gradient(320deg, var(--grad-1) 20%, var(--grad-2) 60%) 1;
   border-radius: 10px 0px 0px 0px;
   clip-path: polygon(100% 100%, 100% 0, 50% 52%, 0% 100%);
 }
