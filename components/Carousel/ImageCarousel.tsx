@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -13,13 +14,19 @@ const ImageCarousel = ({ pictures }: { pictures: string[] | [] }) => {
       showIndicators
       showThumbs={false}
       emulateTouch
+      interval={5000}
     >
       {pictures?.map((el, index) => (
         <div key={index}>
-          <img
+          <Image
             src={el}
+            width={100}
+            height={200}
+            sizes="70vh 100vw"
             alt="picture"
-            style={{ objectFit: "contain", maxHeight: "70vh" }}
+            style={{ objectFit: "contain", maxHeight: "80vh" }}
+            priority={false}
+            quality={100}
           />
         </div>
       ))}

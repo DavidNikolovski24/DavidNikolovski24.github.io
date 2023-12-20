@@ -51,7 +51,7 @@ const ProjectTab = ({ project, clickFnc }: Props) => {
         changeGradient();
       }}
     >
-      <h3 className="inline">{project.name}</h3>
+      <h3 className="">{project.name}</h3>
     </div>
   );
 };

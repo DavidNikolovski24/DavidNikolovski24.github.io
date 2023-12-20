@@ -46,20 +46,39 @@ export const ProjectsData: IProjectData[] = [
   {
     name: "Coza Store",
     desc: "The purpose of this project was to practice and do a small review of my Next 12 with TypeScript. The main idea was to create an online shop where customers can look at available products that the shop offers. This project is built in Next 12 with TypeScript. Bootstrap was used for the styling system. ",
-    pictures: [],
+    pictures: [
+      "/images/CozaStore/cozaStoreHomepage.png",
+      "/images/CozaStore/productPage.png",
+      "/images/CozaStore/blogs.png",
+      "/images/CozaStore/blogPage.png",
+      "/images/CozaStore/aboutPage.png",
+    ],
     sourceLink: "https://github.com/DavidNikolovski24/online-shop",
   },
   {
     name: "Street Artists",
     desc: "The purpose of this project was to practice and do a small review of my JavaScript learning. The main idea was to create a mobile app for street artists and customers where they could meet each other. An artist can put their art up for auction. The customer can bid in the auction. An API has been added for simulation where it simulates another guest placing bids on an auction. This project is built in vanilla JavaScript. SASS was used for the styling system.",
-    pictures: [],
+    pictures: [
+      "/images/StreetArtists/streetArtistLogin.png",
+      "/images/StreetArtists/streetArtistHomepageArtist.png",
+      "/images/StreetArtists/streetArtistHomepageVisitor.png",
+      "/images/StreetArtists/artistAuction.png",
+      "/images/StreetArtists/visitorAuction.png",
+      "/images/StreetArtists/artistAddNewItem.png",
+    ],
     sourceLink: "https://github.com/DavidNikolovski24/street-artists",
     websiteLink: "https://street-artists-zeta.vercel.app/",
   },
   {
     name: "The money solicitor",
     desc: "I am tasked with developing the frontend component of our project, utilizing TypeScript for the coding foundation. My primary focus will be on creating responsive and visually appealing user interfaces using styled components for seamless styling integration. By combining the power of TypeScript with the flexibility of styled components, I aim to deliver a highly dynamic and elegant user interface that enhances the overall user experience of our project.",
-    pictures: [],
+    pictures: [
+      "/images/theMoneySolicitor/homepage.png",
+      "/images/theMoneySolicitor/duringSelection.png",
+      "/images/theMoneySolicitor/form.png",
+      "/images/theMoneySolicitor/signaturePage.png",
+      "/images/theMoneySolicitor/ThankU.png",
+    ],
     sourceLink: "https://github.com/DavidNikolovski24/themoneysolicitor",
     websiteLink: "https://themoneysolicitor-ppsn.vercel.app/",
   },
@@ -69,6 +88,5 @@ export const ProjectsData: IProjectData[] = [
     pictures: [],
     sourceLink:
       "https://github.com/DavidNikolovski24/DavidNikolovski24.github.io",
-    websiteLink: "https://davidnikolovski24.github.io/",
   },
 ];

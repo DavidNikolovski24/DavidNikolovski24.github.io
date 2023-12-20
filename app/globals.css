@@ -161,3 +161,11 @@ h4 {
   transition: all 500ms ease;
 }
 /* /Tabs */
+/* cursor */
+html {
+  --cursor-color: #191716;
+}
+
+html.dark {
+  --cursor-color: #f5efed;
+}

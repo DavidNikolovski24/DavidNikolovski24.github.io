@@ -39,17 +39,15 @@ export default function MaxWidthDialog({
         open={open}
         onClose={handleClose}
       >
-        <DialogTitle className="text-3xl bg-white text-black dark:bg-black dark:text-white">
+        <DialogTitle className="flex justify-between text-3xl bg-white text-black dark:bg-black dark:text-white">
           {titleProject}
+          <Button onClick={handleClose} className=" text-black dark:text-white">
+            Close
+          </Button>
         </DialogTitle>
         <DialogContent className="bg-white text-black dark:bg-black dark:text-white">
           <ImageCarousel pictures={projectPictures ? projectPictures : []} />
         </DialogContent>
-        <DialogActions className=" bg-white text-black dark:bg-black dark:text-white">
-          <Button onClick={handleClose} className=" text-black dark:text-white">
-            Close
-          </Button>
-        </DialogActions>
       </Dialog>
     </React.Fragment>
   );
