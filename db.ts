@@ -14,11 +14,11 @@ export const HomePageBannerText = `
     <p> <u>Let's connect and elevate digital experiences together.</u> </p>
     <div>    
     <u><h3>Languages</h3></u>
-    <p>HTML , CSS , JavaScript(ES6+) , TypeScript</p>
+    <p>HTML , CSS , JavaScript(ES6+) , TypeScript, Dart</p>
     </div>
     <div>
     <u>Frameworks/Libraries</u>
-    <p>React.js, Next.js, Redux, jQuery, AJAX, Styled Components, MUI, SCSS / SASS, Bootstrap, GSAP, Firebase</p>
+    <p>React.js, Next.js, Flutter ,Redux, jQuery, AJAX, Styled Components, MUI, SCSS / SASS, Bootstrap, GSAP, Firebase</p>
     </div>
     <div>
     <u>UX / UI</u>
