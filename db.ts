@@ -41,7 +41,7 @@ export const ProjectsData: IProjectData[] = [
       "/images/Velnes/velnesProfileMenu.png",
     ],
     sourceLink: "https://github.com/DavidNikolovski24/velnes.mk",
-    websiteLink: "https://velnes-mk.vercel.app/",
+    websiteLink: "http://velnes.mk/",
   },
   {
     name: "Coza Store",
