@@ -1,5 +1,5 @@
-import { IProjectData } from "@/db";
-import React from "react";
+import { IProjectData } from '@/db';
+import React from 'react';
 interface Props {
   project: IProjectData;
   clickFnc: (project: IProjectData) => void;
@@ -7,31 +7,45 @@ interface Props {
 
 const ProjectTab = ({ project, clickFnc }: Props) => {
   const changeGradient = () => {
-    const purple = "#663597";
-    const red = "#a43422";
-    const yellow = "#f9d71c";
-    const green = "#008080";
-    let color1 = "";
-    let color2 = "";
+    const purple = '#663597';
+    const red = '#a43422';
+    const yellow = '#f9d71c';
+    const green = '#008080';
+    const blue = '#1e90ff';
+    const orange = '#ff8c00';
+    let color1 = '';
+    let color2 = '';
     switch (project.name) {
-      case "Velnes":
+      case 'Velnes':
         color1 = red;
         color2 = green;
         break;
-      case "Coza Store":
+      case 'Coza Store':
         color1 = purple;
         color2 = red;
         break;
-      case "Street Artists":
+      case 'Street Artists':
         color1 = yellow;
         color2 = green;
         break;
-      case "The money solicitor":
+      case 'The money solicitor':
         color1 = purple;
         color2 = green;
         break;
-      case "Portfolio Website":
+      case 'Portfolio Website':
         color1 = green;
+        color2 = yellow;
+        break;
+      case 'Duga-m':
+        color1 = blue;
+        color2 = orange;
+        break;
+      case 'Tapemotion':
+        color1 = orange;
+        color2 = purple;
+        break;
+      case 'TilerPlace':
+        color1 = blue;
         color2 = yellow;
         break;
       default:
@@ -39,8 +53,8 @@ const ProjectTab = ({ project, clickFnc }: Props) => {
         color2 = yellow;
         break;
     }
-    document.documentElement.style.setProperty("--grad-1", color1);
-    document.documentElement.style.setProperty("--grad-2", color2);
+    document.documentElement.style.setProperty('--grad-1', color1);
+    document.documentElement.style.setProperty('--grad-2', color2);
   };
   return (
     <div

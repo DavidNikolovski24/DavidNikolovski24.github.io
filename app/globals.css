@@ -90,11 +90,6 @@ h4 {
   }
 }
 /* /slide in animation project sections */
-/* filter for logo */
-.dark-filter {
-  filter: brightness(0) saturate(100%) invert(2%) sepia(4%) saturate(3185%)
-    hue-rotate(336deg) brightness(92%) contrast(85%);
-}
 
 /* /filter for logo */
 /* button */

@@ -1,25 +1,19 @@
-"use client";
-import { HomePageBannerText, IProjectData, ProjectsData } from "@/db";
-import TypingTextAnimation from "../HeadingAnimates/TypingTextAnimation";
-import { useState } from "react";
-import ProjectSection from "../ProjectSection/ProjectSection";
-import ProjectTab from "../Tabs/ProjectTab";
+import { HomePageBannerText, IProjectData, ProjectsData } from '@/db';
+import TypingTextAnimation from '../HeadingAnimates/TypingTextAnimation';
+import ProjectSection from '../ProjectSection/ProjectSection';
+import ProjectTab from '../Tabs/ProjectTab';
 
-const Main = () => {
-  const [activeTab, setActiveTab] = useState("Welcome");
-
-  const clickPortfolioTab = (project: IProjectData) => {
-    if (activeTab === project.name) {
-      setActiveTab("Welcome");
-    } else {
-      setActiveTab(project.name);
-    }
-  };
-
+const Main = ({
+  activeTab,
+  clickPortfolioTab,
+}: {
+  activeTab: string;
+  clickPortfolioTab: (project: IProjectData) => void;
+}) => {
   return (
     <main className="flex flex-col lg:flex-row ml-0 lg:ml-12 gap-11 box-border max-w-full flex-grow mt-5 ">
       <div className="w-full lg:w-2/3  flex-grow overflow-hidden  ">
-        <div className={activeTab === "Welcome" ? "slide-in " : "hidden"}>
+        <div className={activeTab === 'Welcome' ? 'slide-in ' : 'hidden'}>
           <TypingTextAnimation heading="Welcome." />
           <div
             className="flex flex-col gap-3 border-l border-color-180  pl-5"
@@ -30,7 +24,7 @@ const Main = () => {
           return (
             <div
               className={
-                activeTab === project.name ? `slide-in mt-11 ` : " hidden "
+                activeTab === project.name ? `slide-in mt-11 ` : ' hidden '
               }
               key={project.name}
             >
