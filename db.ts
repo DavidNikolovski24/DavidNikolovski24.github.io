@@ -7,7 +7,7 @@ export interface IProjectData {
 }
 
 export const HomePageBannerText = `
-    <p>I'm <b>David Nikolovski</b>, a  <b>Frontend Developer</b> with expertise in <b>React</b>, <b>TypeScript</b>, and <b>Next.js</b>. </p>
+    <p>I'm <b>David Nikolovski</b>, a  <b>Full-stack Developer</b> with expertise in <b>React</b>, <b>TypeScript</b>, <b>Next.js</b> and <b>ExpressJS</b>.</p>
     <p>I'm passionate about creating seamless user experiences and thrive on challenges, always seeking innovation. 
     With a strong foundation and a collaborative mindset, I'm dedicated to shaping the future of web development. 
     I specialize in writing highly performant components with pixel-perfect precision and reusable code. </p>
@@ -18,7 +18,7 @@ export const HomePageBannerText = `
     </div>
     <div>
     <u>Frameworks/Libraries</u>
-    <p>React.js, Next.js, Express, Mongoose, Redux, Zustand, Stripe, styled-components, MUI, SCSS / SASS, Tailwind, Bootstrap, Firebase, Framer-Motion, GSAP, jQuery, AJAX</p>
+    <p>React.js, React Native, Next.js, Express, Mongoose, Redux, Zustand, Stripe, styled-components, Tailwind, Firebase, Supabase, Framer-Motion, Shopify Liquid, ElectronJS</p>
     </div> 
     <div>
     <u>UX / UI</u>
@@ -41,6 +41,18 @@ export const ProjectsData: IProjectData[] = [
       '/images/Tapemotion/watchPage.png',
     ],
     websiteLink: 'https://tapemotion.com/en',
+  },
+  {
+    name: 'Caligant',
+    desc: 'This project showcases the client’s personal coaching services and allows clients to easily view information and schedule appointments. It highlights his expertise, programs, and success stories while streamlining communication through an integrated booking system.',
+    pictures: [
+      '/images/Caligant/Caligant1.png',
+      '/images/Caligant/Caligant2.png',
+      '/images/Caligant/Caligant3.png',
+      '/images/Caligant/Caligant4.png',
+      '/images/Caligant/Caligant5.png',
+    ],
+    websiteLink: 'https://caligant.com/',
   },
   {
     name: 'Duga-m',
@@ -66,7 +78,7 @@ export const ProjectsData: IProjectData[] = [
   },
   {
     name: 'Velnes',
-    desc: 'The project goal is to create an app for beauty salons, where clients can make appointments, cancel appointments, see salon reviews from other clients, and see all information available for the chosen salon(something like booking.com for beauty salons). This project is built in React, with TypeScript. For styled systems, that use styled-components. The client requirement was for this app to be mobile only.',
+    desc: 'The project goal is to create an app for beauty salons, where clients can make appointments, cancel appointments, see salon reviews from other clients, and see all information available for the chosen salon(something like booking.com but for beauty salons). This project is built in React, with TypeScript. For styled systems, that use styled-components. The client requirement was for this app to be mobile only.',
     pictures: [
       '/images/Velnes/velnesHome.png',
       '/images/Velnes/velnesSalonPage.png',
@@ -74,7 +86,7 @@ export const ProjectsData: IProjectData[] = [
       '/images/Velnes/velnesProfileMenu.png',
     ],
     sourceLink: 'https://github.com/DavidNikolovski24/velnes.mk',
-    websiteLink: 'https://velnesrevelapps.vercel.app/',
+    websiteLink: 'https://velnes.mk/',
   },
   {
     name: 'Coza Store',
@@ -89,22 +101,8 @@ export const ProjectsData: IProjectData[] = [
     sourceLink: 'https://github.com/DavidNikolovski24/online-shop',
   },
   {
-    name: 'Street Artists',
-    desc: 'The purpose of this project was to practice and do a small review of my JavaScript learning. The main idea was to create a mobile app for street artists and customers where they could meet each other. An artist can put their art up for auction. The customer can bid in the auction. An API has been added for simulation where it simulates another guest placing bids on an auction. This project is built in vanilla JavaScript. SASS was used for the styling system.',
-    pictures: [
-      '/images/StreetArtists/streetArtistLogin.png',
-      '/images/StreetArtists/streetArtistHomepageArtist.png',
-      '/images/StreetArtists/streetArtistHomepageVisitor.png',
-      '/images/StreetArtists/artistAuction.png',
-      '/images/StreetArtists/visitorAuction.png',
-      '/images/StreetArtists/artistAddNewItem.png',
-    ],
-    sourceLink: 'https://github.com/DavidNikolovski24/street-artists',
-    websiteLink: 'https://street-artists-zeta.vercel.app/',
-  },
-  {
     name: 'The money solicitor',
-    desc: 'I am tasked with developing the frontend component of our project, utilizing TypeScript for the coding foundation. My primary focus will be on creating responsive and visually appealing user interfaces using styled components for seamless styling integration. By combining the power of TypeScript with the flexibility of styled components, I aim to deliver a highly dynamic and elegant user interface that enhances the overall user experience of our project.',
+    desc: 'This Upwork project involves developing the frontend with TypeScript to create a responsive and visually engaging user interface. I’m using styled components for efficient, maintainable, and consistent styling. My focus is on delivering a smooth, high-quality user experience across all devices. Together, TypeScript and styled components help me build a modern and elegant interface that elevates the project.',
     pictures: [
       '/images/theMoneySolicitor/homepage.png',
       '/images/theMoneySolicitor/duringSelection.png',

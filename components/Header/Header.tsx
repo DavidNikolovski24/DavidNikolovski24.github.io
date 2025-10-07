@@ -54,7 +54,7 @@ const Header = ({
           <SiGmail size={'1.6rem'} />
         </Link>
         <Link
-          href={'/DavidNikolovskiResume(9).pdf'}
+          href={'/DavidNikolovskiResume(10).pdf'}
           target="_blank"
           rel="noopener noreferrer"
           title="Resume"

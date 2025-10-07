@@ -1,12 +1,12 @@
-"use client";
-import * as React from "react";
-import Button from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
-import PrimaryButton from "../Buttons/PrimaryButton";
-import ImageCarousel from "../Carousel/ImageCarousel";
+'use client';
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
+import PrimaryButton from '../Buttons/PrimaryButton';
+import ImageCarousel from '../Carousel/ImageCarousel';
 
 interface Props {
   buttonText: string;
@@ -35,11 +35,11 @@ export default function MaxWidthDialog({
 
       <Dialog
         fullWidth={true}
-        maxWidth={"lg"}
+        maxWidth={'lg'}
         open={open}
         onClose={handleClose}
       >
-        <DialogTitle className="flex justify-between text-3xl bg-white text-black dark:bg-black dark:text-white">
+        <DialogTitle className="flex justify-between text-3xl bg-white text-black dark:bg-black dark:text-white select-none">
           {titleProject}
           <Button onClick={handleClose} className=" text-black dark:text-white">
             Close
